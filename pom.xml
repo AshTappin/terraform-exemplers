@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.blackpepper.terraform</groupId>
-	<artifactId>terraform-exemplers</artifactId>
+	<artifactId>terraform-exemplars</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>terraform-exemplers</name>
-	<description>Terraform config exemplers to provision an environment for a vanilla web app (Java REST API, React frontend, postgres database)</description>
+	<name>terraform-exemplars</name>
+	<description>Terraform config exemplars to provision an environment for a vanilla web app (Java REST API, React frontend, postgres database)</description>
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>11</java.version>
