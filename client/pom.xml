@@ -54,7 +54,7 @@
         <resources>
             <resource>
                 <directory>${project.basedir}/build</directory>
-                <targetPath>${project.basedir}/classes/static</targetPath>
+                <targetPath>${project.build.directory}/classes/static</targetPath>
             </resource>
         </resources>
     </build>
