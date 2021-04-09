@@ -20,3 +20,4 @@ resource "azurerm_resource_group" "ash-exemplar" {
   location = local.location
   name = "ash-exemplar-resource-group"
 }
+
