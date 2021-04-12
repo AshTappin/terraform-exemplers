@@ -29,3 +29,10 @@ module "server" {
   resource_group = azurerm_resource_group.ash-exemplar.name
 }
 
+module "postgresql" {
+  source = "./modules/postgresql-database"
+  environment = local.environment
+  location = local.location
+  resource_group_name = azurerm_resource_group.ash-exemplar.name
+}
+
