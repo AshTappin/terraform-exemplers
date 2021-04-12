@@ -3,8 +3,8 @@ resource "azurerm_app_service_plan" "app" {
   name = "exemplar-${var.environment}-service-plan"
   resource_group_name = var.resource_group
   sku {
-    size = "F1"
-    tier = "Free"
+    size = "B1"
+    tier = "Basic"
   }
   kind = "Linux"
   reserved = true
@@ -18,12 +18,12 @@ resource "azurerm_app_service" "app" {
 
   site_config {
     always_on = true
-    dynamic "ip_restriction" {
-      for_each = var.ip_restrictions
-      content {
-        ip_address = ip_restriction.value.ip_address
-        name = ip_restriction.value.name
-      }
-    }
+//    dynamic "ip_restriction" {
+//      for_each = var.ip_restrictions
+//      content {
+//        ip_address = ip_restriction.value.ip_address
+//        name = ip_restriction.value.name
+//      }
+//    }
   }
 }

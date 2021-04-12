@@ -13,12 +13,12 @@ provider "azurerm" {
 
 locals {
   location = "UK South"
-  environment = lookup(var.environments, var.environment_key)
+  environment = terraform.workspace
 }
 
 resource "azurerm_resource_group" "ash-exemplar" {
   location = local.location
-  name = "exemplar-resource-group"
+  name = "exemplar-${local.environment}-resource-group"
 }
 
 module "server" {
