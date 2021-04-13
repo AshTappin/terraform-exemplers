@@ -1,4 +1,4 @@
-package com.blackpepper.terraform.terraformexemplers;
+package com.blackpepper.terraform.terraformexemplers.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
