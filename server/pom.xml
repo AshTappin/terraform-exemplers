@@ -59,6 +59,39 @@
                     </profiles>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-webapp-maven-plugin</artifactId>
+                <version>1.11.0</version>
+                <configuration>
+                    <authType>service_principal</authType>
+                    <auth>
+                        <client></client>
+                        <tenant></tenant>
+                        <key></key>
+                    </auth>
+                    <schemaVersion>V2</schemaVersion>
+                    <subscriptionId>e57d0410-710b-42b3-a194-9f45193a28f2</subscriptionId>
+                    <resourceGroup>exemplar-ci-resource-group</resourceGroup>
+                    <appName>exemplar-ci-app-service</appName>
+                    <runtime>
+                        <os>linux</os>
+                        <javaVersion>java11</javaVersion>
+                        <webContainer>java11</webContainer>
+                    </runtime>
+                    <deployment>
+                        <resources>
+                            <resource>
+                                <directory>${project.basedir}/target</directory>
+                                <includes>
+                                    <include>*.jar</include>
+                                </includes>
+                            </resource>
+                        </resources>
+                    </deployment>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 

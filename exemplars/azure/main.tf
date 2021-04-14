@@ -1,4 +1,10 @@
 terraform {
+
+  // THe state can also be sstored in an S3 bucket or azure storage
+  // container. As long as it is secure and encrypted in rest and transit.
+  // This is because the state can contain sensitive data such as passwords and
+  // private keys
+  //  https://www.terraform.io/docs/language/state/sensitive-data.html
   backend "remote" {
     organization = "blackpeppersoftware"
     workspaces {
