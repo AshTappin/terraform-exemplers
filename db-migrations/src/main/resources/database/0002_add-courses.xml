@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+<changeSet id="0002" author="example@example.com">
+    <insert tableName="course">
+        <column name="id" value="1004671d-e13f-47d3-a6cd-34cc3752e802"/>
+        <column name="name" value="Terraform Fundamentals"/>
+    </insert>
+    <insert tableName="course">
+        <column name="id" value="d8f0b403-40d3-4058-a5d9-2a6a60bc4751"/>
+        <column name="name" value="Infrastructure as code 101"/>
+    </insert>
+    <insert tableName="course">
+        <column name="id" value="24ad3f3b-1651-4d55-81de-bf1dd3bd3187"/>
+        <column name="name" value="Terraform Secret Management"/>
+    </insert>
+</changeSet>
+</databaseChangeLog>
