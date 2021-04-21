@@ -85,6 +85,20 @@
                         <javaVersion>java11</javaVersion>
                         <webContainer>java11</webContainer>
                     </runtime>
+                    <appSettings>
+                        <property>
+                            <name>spring.datasource.url</name>
+                            <value>jdbc:postgresql://exemplar-ci-db-server.postgres.database.azure.com:5432/exemplar-ci-db?sslmode=require</value>
+                        </property>
+                        <property>
+                            <name>spring.datasource.username</name>
+                            <value>pgadmin@exemplar-ci-db-server</value>
+                        </property>
+                        <property>
+                            <name>spring.datasource.password</name>
+                            <value></value>
+                        </property>
+                    </appSettings>
                     <deployment>
                         <resources>
                             <resource>
